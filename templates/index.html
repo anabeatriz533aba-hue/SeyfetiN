@@ -1,0 +1,1028 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2026 Bedava Panel | Ücretsiz Sorgu Paneli | TC Hane GSM Sorgu</title>
+    
+    <!-- GÜVENLİK META -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="csrf-token" content="{{ csrf_token }}">
+    
+    <!-- ========== SEO ANAHTAR KELİMELER ========== -->
+    <meta name="description" content="2026 bedava panel, ücretsiz sorgu paneli, beleş panel. TC sorgu, hane sorgu, güncel GSM sorgu bedava. Panel bedeva 2026, panel 2026 ücretsiz.">
+    
+    <meta name="keywords" content="bedava panel, ücretsiz panel, beleş panel, 2026 panel, panel 2026, bedava 2026 panel, ücretsiz 2026 panel, bedeva panel, panel bedeva, 2026 bedeva panel, sorgu panel, bedava sorgu paneli, ücretsiz sorgu paneli, tc sorgu bedava, hane sorgu bedava, güncel gsm sorgu bedava, aile sorgu bedava, adres sorgu bedava, tc sorgu panel, hane sorgu panel, gsm sorgu panel, telegram sorgu botu, ücretsiz bot, Focusum, Focusum Sorgulama Bot">
+    
+    <!-- Domain bilgisi (title'da değil, content'te) -->
+    <meta name="domain" content="panel.2026tr.xyz">
+    
+    <!-- ROBOTS -->
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="2026 Bedava Panel | Ücretsiz Sorgu Paneli">
+    <meta property="og:description" content="2026'nın en iyi bedava sorgu paneli. TC, hane, GSM sorgu ücretsiz.">
+    <meta property="og:url" content="https://panel.2026tr.xyz">
+    
+    <!-- Canonical -->
+    <link rel="canonical" href="https://panel.2026tr.xyz">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(145deg, #0a0a0f 0%, #111118 100%);
+            color: #ededef;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        /* NAVBAR */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.5rem 2rem;
+            background: rgba(10, 10, 20, 0.95);
+            border-bottom: 2px solid #7c3aed;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            backdrop-filter: blur(10px);
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .logo i {
+            font-size: 2.5rem;
+            color: #a78bfa;
+            filter: drop-shadow(0 0 10px #7c3aed);
+        }
+
+        .logo span {
+            font-weight: 800;
+            font-size: 2rem;
+            background: linear-gradient(135deg, #ffffff, #c0b0ff, #a78bfa);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2.5rem;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .nav-links a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #a78bfa;
+        }
+
+        .domain-badge {
+            background: #7c3aed;
+            padding: 0.7rem 1.5rem;
+            border-radius: 50px;
+            color: white;
+            font-weight: 700;
+            font-size: 1rem;
+            border: 2px solid #a78bfa;
+            box-shadow: 0 0 20px rgba(124, 58, 237, 0.5);
+        }
+
+        .domain-badge i {
+            margin-right: 8px;
+        }
+
+        .bot-badge {
+            background: #27a7e7;
+            padding: 0.7rem 1.5rem;
+            border-radius: 50px;
+            color: white;
+            font-weight: 700;
+            font-size: 1rem;
+            border: 2px solid #3faee8;
+            box-shadow: 0 0 20px #27a7e7;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .bot-badge:hover {
+            transform: scale(1.05);
+            background: #3faee8;
+        }
+
+        /* 2026 BADGE */
+        .year-badge {
+            background: #ffd700;
+            color: #0a0a0f;
+            padding: 0.3rem 1rem;
+            border-radius: 30px;
+            font-weight: 800;
+            font-size: 1rem;
+            margin-left: 1rem;
+            display: inline-block;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% { box-shadow: 0 0 0 0 rgba(255, 215, 0, 0.7); }
+            70% { box-shadow: 0 0 0 10px rgba(255, 215, 0, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(255, 215, 0, 0); }
+        }
+
+        /* HERO */
+        .hero {
+            text-align: center;
+            padding: 4rem 0;
+            border-bottom: 1px solid #2a2a3a;
+        }
+
+        .hero h1 {
+            font-size: 4rem;
+            font-weight: 900;
+            background: linear-gradient(to right, #ffffff, #d8ccff, #b69dff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 1.5rem;
+            line-height: 1.2;
+        }
+
+        .hero .year-highlight {
+            font-size: 5rem;
+            color: #ffd700;
+            text-shadow: 0 0 30px #ffd700;
+            margin: 0 0.5rem;
+        }
+
+        .hero h2 {
+            font-size: 2rem;
+            color: #a78bfa;
+            margin-bottom: 2rem;
+        }
+
+        .hero .free-badge {
+            background: #00ff00;
+            color: #000;
+            padding: 0.5rem 2rem;
+            border-radius: 50px;
+            font-weight: 900;
+            font-size: 1.5rem;
+            display: inline-block;
+            margin-bottom: 1rem;
+            box-shadow: 0 0 30px #00ff00;
+        }
+
+        .hero p {
+            font-size: 1.3rem;
+            max-width: 1000px;
+            margin: 0 auto 2rem;
+            color: #d0d0e0;
+        }
+
+        .domain-display {
+            font-size: 2rem;
+            font-weight: 800;
+            color: #a78bfa;
+            background: rgba(124, 58, 237, 0.2);
+            padding: 1rem 2rem;
+            border-radius: 60px;
+            display: inline-block;
+            border: 2px solid #7c3aed;
+            margin: 2rem 0;
+        }
+
+        /* SORGU TİPLERİ */
+        .sorgu-tipleri {
+            background: #0f0f1a;
+            border-radius: 50px;
+            padding: 3rem;
+            margin: 3rem 0;
+            border: 1px solid #7c3aed;
+            box-shadow: 0 0 50px rgba(124, 58, 237, 0.3);
+        }
+
+        .sorgu-tipleri h3 {
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 1rem;
+            color: #a78bfa;
+        }
+
+        .sorgu-tipleri .free-text {
+            text-align: center;
+            color: #00ff00;
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+            font-weight: 700;
+        }
+
+        .sorgu-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1.5rem;
+        }
+
+        .sorgu-item {
+            background: #1a1a2a;
+            padding: 2rem 1rem;
+            border-radius: 30px;
+            text-align: center;
+            border: 1px solid #3a2a5a;
+            transition: all 0.3s;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .sorgu-item:hover {
+            border-color: #a78bfa;
+            transform: scale(1.05);
+            background: #202035;
+            box-shadow: 0 0 30px rgba(167, 139, 250, 0.3);
+        }
+
+        .sorgu-item .free-tag {
+            position: absolute;
+            top: 10px;
+            right: -30px;
+            background: #00ff00;
+            color: #000;
+            padding: 0.3rem 3rem;
+            transform: rotate(45deg);
+            font-size: 0.8rem;
+            font-weight: 800;
+            box-shadow: 0 0 10px #00ff00;
+        }
+
+        .sorgu-item i {
+            font-size: 2.5rem;
+            color: #a78bfa;
+            margin-bottom: 1rem;
+        }
+
+        .sorgu-item h4 {
+            font-size: 1.3rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .sorgu-item p {
+            color: #b0b0c0;
+            font-size: 0.9rem;
+        }
+
+        /* BEDAVA VURGUSU */
+        .free-highlight {
+            background: rgba(0, 255, 0, 0.1);
+            border: 2px solid #00ff00;
+            border-radius: 60px;
+            padding: 3rem;
+            margin: 3rem 0;
+            text-align: center;
+        }
+
+        .free-highlight h3 {
+            font-size: 3rem;
+            color: #00ff00;
+            margin-bottom: 1rem;
+        }
+
+        .free-highlight p {
+            font-size: 1.5rem;
+            color: #fff;
+        }
+
+        /* BOT TANITIM */
+        .bot-tanitim {
+            background: linear-gradient(45deg, #1a1a2a, #0a0a1a);
+            border-radius: 60px;
+            padding: 4rem;
+            margin: 4rem 0;
+            border: 2px solid #7c3aed;
+        }
+
+        .bot-tanitim h2 {
+            font-size: 3rem;
+            text-align: center;
+            margin-bottom: 2rem;
+            color: #ffffff;
+        }
+
+        .bot-tanitim h2 span {
+            color: #a78bfa;
+            background: #2a2a40;
+            padding: 0.5rem 1.5rem;
+            border-radius: 60px;
+            font-size: 2rem;
+            display: inline-block;
+        }
+
+        .bot-ozellikler {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+
+        .bot-ozellik {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+            background: #151525;
+            padding: 1.5rem;
+            border-radius: 40px;
+            border: 1px solid #3a2a5a;
+            transition: all 0.3s;
+        }
+
+        .bot-ozellik:hover {
+            transform: translateX(10px);
+            border-color: #a78bfa;
+        }
+
+        .bot-ozellik i {
+            font-size: 2rem;
+            color: #a78bfa;
+            min-width: 50px;
+            text-align: center;
+        }
+
+        .bot-ozellik-text h4 {
+            font-size: 1.4rem;
+            margin-bottom: 0.3rem;
+        }
+
+        .bot-ozellik-text p {
+            color: #b0b0c0;
+        }
+
+        .bot-link {
+            text-align: center;
+            margin-top: 3rem;
+        }
+
+        .bot-link a {
+            background: #27a7e7;
+            color: white;
+            text-decoration: none;
+            padding: 1.5rem 4rem;
+            border-radius: 60px;
+            font-size: 2rem;
+            font-weight: 800;
+            display: inline-block;
+            border: 3px solid #3faee8;
+            box-shadow: 0 0 50px #27a7e7;
+            transition: all 0.3s;
+        }
+
+        .bot-link a:hover {
+            transform: scale(1.1);
+            background: #3faee8;
+            box-shadow: 0 0 70px #27a7e7;
+        }
+
+        .bot-link a i {
+            margin-right: 1rem;
+        }
+
+        /* İSTATİSTİKLER */
+        .stats {
+            display: flex;
+            justify-content: space-around;
+            margin: 4rem 0;
+            background: #0f0f1a;
+            padding: 3rem;
+            border-radius: 50px;
+            border: 1px solid #3a2a5a;
+        }
+
+        .stat-item {
+            text-align: center;
+        }
+
+        .stat-item .number {
+            font-size: 4rem;
+            font-weight: 900;
+            color: #a78bfa;
+        }
+
+        .stat-item .label {
+            font-size: 1.3rem;
+            color: #d0d0e0;
+        }
+
+        /* DETAYLI SORGU */
+        .detayli-sorgu {
+            margin: 4rem 0;
+        }
+
+        .detayli-sorgu h3 {
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 3rem;
+            color: #a78bfa;
+        }
+
+        .detayli-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+        }
+
+        .detayli-kategori {
+            background: #151525;
+            border-radius: 40px;
+            padding: 2rem;
+            border: 1px solid #3a2a5a;
+            transition: all 0.3s;
+        }
+
+        .detayli-kategori:hover {
+            transform: translateY(-10px);
+            border-color: #a78bfa;
+            box-shadow: 0 10px 30px rgba(167, 139, 250, 0.2);
+        }
+
+        .detayli-kategori h4 {
+            font-size: 1.8rem;
+            color: #a78bfa;
+            margin-bottom: 1.5rem;
+            border-bottom: 2px solid #2a2a40;
+            padding-bottom: 1rem;
+        }
+
+        .detayli-kategori ul {
+            list-style: none;
+        }
+
+        .detayli-kategori li {
+            margin: 1rem 0;
+            font-size: 1.1rem;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .detayli-kategori li i {
+            color: #7c3aed;
+            min-width: 25px;
+        }
+
+        /* REFERANS */
+        .referans {
+            background: linear-gradient(135deg, rgba(124, 58, 237, 0.2), #0a0a1a);
+            border-radius: 60px;
+            padding: 4rem;
+            margin: 4rem 0;
+            text-align: center;
+            border: 2px solid #7c3aed;
+        }
+
+        .referans h3 {
+            font-size: 3rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .referans p {
+            font-size: 1.5rem;
+            color: #d0d0e0;
+            margin-bottom: 2rem;
+        }
+
+        .referans .kredi {
+            font-size: 4rem;
+            font-weight: 900;
+            color: #a78bfa;
+        }
+
+        /* SSS */
+        .sss {
+            margin: 4rem 0;
+        }
+
+        .sss h3 {
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 3rem;
+            color: #a78bfa;
+        }
+
+        .sss-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+        }
+
+        .sss-item {
+            background: #151525;
+            border-radius: 30px;
+            padding: 2rem;
+            border: 1px solid #2a2a40;
+            transition: all 0.3s;
+        }
+
+        .sss-item:hover {
+            border-color: #a78bfa;
+            transform: scale(1.02);
+        }
+
+        .sss-item h4 {
+            font-size: 1.3rem;
+            color: #a78bfa;
+            margin-bottom: 1rem;
+        }
+
+        /* FOOTER */
+        footer {
+            margin-top: 5rem;
+            padding: 3rem 0;
+            border-top: 2px solid #7c3aed;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: #7f7f99;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .footer-links {
+            display: flex;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .footer-links a {
+            color: #a78bfa;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .footer-links a:hover {
+            color: #ffffff;
+        }
+
+        .signature {
+            font-size: 1.2rem;
+            color: #a78bfa;
+            background: rgba(124, 58, 237, 0.1);
+            padding: 0.5rem 2rem;
+            border-radius: 60px;
+            border: 1px solid #7c3aed;
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 1200px) {
+            .sorgu-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+            .detayli-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 800px) {
+            .sorgu-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .detayli-grid {
+                grid-template-columns: 1fr;
+            }
+            .sss-grid {
+                grid-template-columns: 1fr;
+            }
+            .bot-ozellikler {
+                grid-template-columns: 1fr;
+            }
+            .stats {
+                flex-wrap: wrap;
+                gap: 2rem;
+            }
+            .navbar {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            .nav-links {
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- GÜVENLİK -->
+    <input type="hidden" id="csrf-token" value="{{ csrf_token }}">
+    
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="logo">
+            <i class="fas fa-crown"></i>
+            <span>FOCUSUM</span>
+            <span class="year-badge">2026</span>
+        </div>
+        <div class="nav-links">
+            <a href="#">ANA SAYFA</a>
+            <a href="#sorgu-tipleri">SORGU</a>
+            <a href="#bot">BOT</a>
+            <a href="#referans">REFERANS</a>
+            <span class="domain-badge"><i class="fas fa-globe"></i> panel.2026tr.xyz</span>
+            <div class="bot-badge" onclick="window.open('https://t.me/FocusumSorgulamaBot', '_blank')">
+                <i class="fab fa-telegram"></i> @FocusumSorgulamaBot
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <!-- HERO -->
+        <div class="hero">
+            <div class="free-badge">🔴 BEDAVA • ÜCRETSİZ • BELEŞ</div>
+            <h1>2026 BEDAVA PANEL</h1>
+            <div class="domain-display">
+                <i class="fas fa-globe"></i> panel.2026tr.xyz
+            </div>
+            <h2>TÜRKİYE'NİN EN GÜÇLÜ ÜCRETSİZ SORGU PLATFORMU</h2>
+            <p>🔍 TC Kimlik Sorgu • Hane Sorgu • Aile Sorgu • Güncel GSM Sorgu • Adres Sorgu • Ad Soyad Sorgu • Nüfus Kaydı Sorgu • Doğum Tarihi Sorgu • Yakın Çevre Sorgu • Komşu Sorgu • Operatör Sorgu • Hat Durumu Sorgu • İkametgah Sorgu • TC ile Herşey</p>
+            <p style="color: #00ff00; font-size: 1.5rem; font-weight: 800;">⭐ TÜM SORGULAR BEDAVA • ÜCRETSİZ • BELEŞ ⭐</p>
+            <div style="margin-top: 2rem;">
+                <a href="https://t.me/FocusumSorgulamaBot" target="_blank" rel="noopener noreferrer" style="background: #27a7e7; color: white; text-decoration: none; padding: 1rem 3rem; border-radius: 60px; font-size: 1.5rem; font-weight: 700; display: inline-block; border: 3px solid #3faee8; transition: all 0.3s;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
+                    <i class="fab fa-telegram"></i> TELEGRAM BOTUNA GİT
+                </a>
+            </div>
+        </div>
+
+        <!-- BEDAVA VURGUSU -->
+        <div class="free-highlight">
+            <h3>🎁 2026'DA TÜM SORGULAR BEDAVA!</h3>
+            <p>panel.2026tr.xyz - Ücretsiz panel, beleş sorgu, bedava TC sorgu</p>
+            <p style="font-size: 2rem; color: #ffd700; margin-top: 1rem;">⚡ HEMEN DENE ⚡</p>
+        </div>
+
+        <!-- TÜM SORGU TİPLERİ -->
+        <div class="sorgu-tipleri" id="sorgu-tipleri">
+            <h3>🔎 2026 BEDAVA SORGU TİPLERİ</h3>
+            <div class="free-text">⭐ HEPSİ ÜCRETSİZ • BEDAVA • BELEŞ ⭐</div>
+            <div class="sorgu-grid">
+                <div class="sorgu-item">
+                    <div class="free-tag">BEDAVA</div>
+                    <i class="fas fa-id-card"></i>
+                    <h4>TC Kimlik Sorgu</h4>
+                    <p>TC no ile kimlik bilgileri bedava</p>
+                </div>
+                <div class="sorgu-item">
+                    <div class="free-tag">BEDAVA</div>
+                    <i class="fas fa-user"></i>
+                    <h4>Ad Soyad Sorgu</h4>
+                    <p>İsim ile TC, adres, telefon bedava</p>
+                </div>
+                <div class="sorgu-item">
+                    <div class="free-tag">BEDAVA</div>
+                    <i class="fas fa-phone"></i>
+                    <h4>Güncel GSM Sorgu</h4>
+                    <p>TC ile güncel telefon bedava</p>
+                </div>
+                <div class="sorgu-item">
+                    <div class="free-tag">BEDAVA</div>
+                    <i class="fas fa-home"></i>
+                    <h4>Hane Sorgu</h4>
+                    <p>TC ile hane halkı bedava</p>
+                </div>
+                <div class="sorgu-item">
+                    <div class="free-tag">BEDAVA</div>
+                    <i class="fas fa-people-arrows"></i>
+                    <h4>Aile Sorgu</h4>
+                    <p>Aile bireyleri bedava</p>
+                </div>
+                <div class="sorgu-item">
+                    <div class="free-tag">BEDAVA</div>
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h4>Adres Sorgu</h4>
+                    <p>TC ile ikametgah bedava</p>
+                </div>
+                <div class="sorgu-item">
+                    <div class="free-tag">BEDAVA</div>
+                    <i class="fas fa-calendar"></i>
+                    <h4>Doğum Tarihi Sorgu</h4>
+                    <p>TC ile doğum tarihi bedava</p>
+                </div>
+                <div class="sorgu-item">
+                    <div class="free-tag">BEDAVA</div>
+                    <i class="fas fa-venus-mars"></i>
+                    <h4>Nüfus Kaydı Sorgu</h4>
+                    <p>TC ile nüfus bilgileri bedava</p>
+                </div>
+                <div class="sorgu-item">
+                    <div class="free-tag">BEDAVA</div>
+                    <i class="fas fa-tree"></i>
+                    <h4>Çevre Sorgu</h4>
+                    <p>Komşular, yakın çevre bedava</p>
+                </div>
+                <div class="sorgu-item">
+                    <div class="free-tag">BEDAVA</div>
+                    <i class="fas fa-sim-card"></i>
+                    <h4>Operatör Sorgu</h4>
+                    <p>GSM operatör bilgisi bedava</p>
+                </div>
+                <div class="sorgu-item">
+                    <div class="free-tag">BEDAVA</div>
+                    <i class="fas fa-signal"></i>
+                    <h4>Hat Durumu Sorgu</h4>
+                    <p>Telefon hattı aktif mi? bedava</p>
+                </div>
+                <div class="sorgu-item">
+                    <div class="free-tag">BEDAVA</div>
+                    <i class="fas fa-address-book"></i>
+                    <h4>İkametgah Sorgu</h4>
+                    <p>Güncel ikamet adresi bedava</p>
+                </div>
+                <div class="sorgu-item">
+                    <div class="free-tag">BEDAVA</div>
+                    <i class="fas fa-fingerprint"></i>
+                    <h4>TC Doğrulama</h4>
+                    <p>TC no geçerli mi? bedava</p>
+                </div>
+                <div class="sorgu-item">
+                    <div class="free-tag">BEDAVA</div>
+                    <i class="fas fa-user-friends"></i>
+                    <h4>Aile Ağacı</h4>
+                    <p>Anne, baba, kardeşler bedava</p>
+                </div>
+                <div class="sorgu-item">
+                    <div class="free-tag">BEDAVA</div>
+                    <i class="fas fa-building"></i>
+                    <h4>Apartman Sorgu</h4>
+                    <p>Aynı apartmanda oturanlar bedava</p>
+                </div>
+                <div class="sorgu-item">
+                    <div class="free-tag">BEDAVA</div>
+                    <i class="fas fa-phone-alt"></i>
+                    <h4>Numara Sorgu</h4>
+                    <p>Telefon ile TC, ad, soyad bedava</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- BOT TANITIM -->
+        <div class="bot-tanitim" id="bot">
+            <h2>🤖 2026 BEDAVA TELEGRAM BOTU <span>@FocusumSorgulamaBot</span></h2>
+            
+            <div class="bot-ozellikler">
+                <div class="bot-ozellik">
+                    <i class="fas fa-id-card"></i>
+                    <div class="bot-ozellik-text">
+                        <h4>TC Sorgu Bedava</h4>
+                        <p>TC numarası ile ad, soyad, doğum tarihi, baba adı, anne adı, doğum yeri, cilt no, aile sıra no, medeni hal, din, il, ilçe, mahalle, cilt, aile, sıra no - HEPSİ BEDAVA</p>
+                    </div>
+                </div>
+                
+                <div class="bot-ozellik">
+                    <i class="fas fa-home"></i>
+                    <div class="bot-ozellik-text">
+                        <h4>Hane Sorgu Ücretsiz</h4>
+                        <p>Aynı hanede yaşayan tüm bireyler, yaşları, cinsiyetleri, TC numaraları, ad-soyadları, yakınlık dereceleri - ÜCRETSİZ</p>
+                    </div>
+                </div>
+                
+                <div class="bot-ozellik">
+                    <i class="fas fa-phone"></i>
+                    <div class="bot-ozellik-text">
+                        <h4>Güncel GSM Sorgu Bedava</h4>
+                        <p>TC ile kişinin güncel telefon numarası, operatör bilgisi, hat aktif mi, pasif mi, faturasız/faturalı, hat açılış tarihi - BEDAVA</p>
+                    </div>
+                </div>
+                
+                <div class="bot-ozellik">
+                    <i class="fas fa-people-arrows"></i>
+                    <div class="bot-ozellik-text">
+                        <h4>Aile Sorgu Beleş</h4>
+                        <p>Anne, baba, kardeşler, eş, çocuklar, dede, nine, torun, amca, dayı, hala, teyze, kuzenler - BELEŞ</p>
+                    </div>
+                </div>
+                
+                <div class="bot-ozellik">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div class="bot-ozellik-text">
+                        <h4>Adres Sorgu Ücretsiz</h4>
+                        <p>TC ile güncel ikamet adresi, önceki adresler, adres geçmişi, adres değişiklik tarihleri, komşu bilgileri - ÜCRETSİZ</p>
+                    </div>
+                </div>
+                
+                <div class="bot-ozellik">
+                    <i class="fas fa-user"></i>
+                    <div class="bot-ozellik-text">
+                        <h4>Ad Soyad Sorgu Bedava</h4>
+                        <p>İsim ve soyisim ile TC numarası, doğum tarihi, yaşadığı şehir, olası adresler, telefon numaraları - BEDAVA</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="bot-link">
+                <a href="https://t.me/FocusumSorgulamaBot" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-telegram"></i> @FocusumSorgulamaBot
+                </a>
+            </div>
+        </div>
+
+        <!-- İSTATİSTİKLER -->
+        <div class="stats">
+            <div class="stat-item">
+                <div class="number">500K+</div>
+                <div class="label">BEDAVA SORGU</div>
+            </div>
+            <div class="stat-item">
+                <div class="number">25K+</div>
+                <div class="label">ÜCRETSİZ KULLANICI</div>
+            </div>
+            <div class="stat-item">
+                <div class="number">4.9</div>
+                <div class="label">PUAN</div>
+            </div>
+            <div class="stat-item">
+                <div class="number">7/24</div>
+                <div class="label">AKTİF</div>
+            </div>
+        </div>
+
+        <!-- DETAYLI SORGU -->
+        <div class="detayli-sorgu">
+            <h3>📋 2026 BEDAVA SORGU İÇERİKLERİ</h3>
+            <div class="detayli-grid">
+                <div class="detayli-kategori">
+                    <h4>KİMLİK BİLGİLERİ</h4>
+                    <ul>
+                        <li><i class="fas fa-check-circle"></i> TC Kimlik Numarası</li>
+                        <li><i class="fas fa-check-circle"></i> Ad Soyad</li>
+                        <li><i class="fas fa-check-circle"></i> Doğum Tarihi</li>
+                        <li><i class="fas fa-check-circle"></i> Doğum Yeri</li>
+                        <li><i class="fas fa-check-circle"></i> Baba Adı</li>
+                        <li><i class="fas fa-check-circle"></i> Anne Adı</li>
+                        <li><i class="fas fa-check-circle"></i> Cinsiyet</li>
+                        <li><i class="fas fa-check-circle"></i> Medeni Hal</li>
+                        <li><i class="fas fa-check-circle"></i> Din</li>
+                        <li><i class="fas fa-check-circle"></i> Kan Grubu</li>
+                    </ul>
+                </div>
+                
+                <div class="detayli-kategori">
+                    <h4>NÜFUS KAYDI</h4>
+                    <ul>
+                        <li><i class="fas fa-check-circle"></i> Cilt No</li>
+                        <li><i class="fas fa-check-circle"></i> Aile Sıra No</li>
+                        <li><i class="fas fa-check-circle"></i> Sıra No</li>
+                        <li><i class="fas fa-check-circle"></i> Kayıtlı Olduğu İl</li>
+                        <li><i class="fas fa-check-circle"></i> Kayıtlı Olduğu İlçe</li>
+                        <li><i class="fas fa-check-circle"></i> Kayıtlı Olduğu Mahalle</li>
+                        <li><i class="fas fa-check-circle"></i> Cilt Adı</li>
+                        <li><i class="fas fa-check-circle"></i> Kayıt No</li>
+                        <li><i class="fas fa-check-circle"></i> Kayıt Tarihi</li>
+                    </ul>
+                </div>
+                
+                <div class="detayli-kategori">
+                    <h4>İLETİŞİM BİLGİLERİ</h4>
+                    <ul>
+                        <li><i class="fas fa-check-circle"></i> Güncel GSM Numarası</li>
+                        <li><i class="fas fa-check-circle"></i> İkinci GSM Numarası</li>
+                        <li><i class="fas fa-check-circle"></i> Sabit Hat</li>
+                        <li><i class="fas fa-check-circle"></i> Operatör Bilgisi</li>
+                        <li><i class="fas fa-check-circle"></i> Hat Durumu</li>
+                        <li><i class="fas fa-check-circle"></i> Fatura Tipi</li>
+                        <li><i class="fas fa-check-circle"></i> Hat Açılış Tarihi</li>
+                        <li><i class="fas fa-check-circle"></i> Son İşlem Tarihi</li>
+                        <li><i class="fas fa-check-circle"></i> E-posta Adresi</li>
+                    </ul>
+                </div>
+                
+                <div class="detayli-kategori">
+                    <h4>ADRES BİLGİLERİ</h4>
+                    <ul>
+                        <li><i class="fas fa-check-circle"></i> Güncel İkamet Adresi</li>
+                        <li><i class="fas fa-check-circle"></i> Önceki Adresler</li>
+                        <li><i class="fas fa-check-circle"></i> Adres Değişiklik Tarihi</li>
+                        <li><i class="fas fa-check-circle"></i> İl / İlçe / Mahalle</li>
+                        <li><i class="fas fa-check-circle"></i> Apartman / Site</li>
+                        <li><i class="fas fa-check-circle"></i> Kapı No / Daire</li>
+                        <li><i class="fas fa-check-circle"></i> Posta Kodu</li>
+                    </ul>
+                </div>
+                
+                <div class="detayli-kategori">
+                    <h4>AİLE / HANE</h4>
+                    <ul>
+                        <li><i class="fas fa-check-circle"></i> Anne - Baba Bilgileri</li>
+                        <li><i class="fas fa-check-circle"></i> Kardeşler</li>
+                        <li><i class="fas fa-check-circle"></i> Eş Bilgisi</li>
+                        <li><i class="fas fa-check-circle"></i> Çocuklar</li>
+                        <li><i class="fas fa-check-circle"></i> Aynı Hanede Yaşayanlar</li>
+                        <li><i class="fas fa-check-circle"></i> Yakın Akrabalar</li>
+                        <li><i class="fas fa-check-circle"></i> Aile Ağacı</li>
+                    </ul>
+                </div>
+                
+                <div class="detayli-kategori">
+                    <h4>ÇEVRE / KOMŞU</h4>
+                    <ul>
+                        <li><i class="fas fa-check-circle"></i> Komşu Kayıtları</li>
+                        <li><i class="fas fa-check-circle"></i> Aynı Apartman Sakinleri</li>
+                        <li><i class="fas fa-check-circle"></i> Aynı Site Sakinleri</li>
+                        <li><i class="fas fa-check-circle"></i> Aynı Mahalle</li>
+                        <li><i class="fas fa-check-circle"></i> Yakın Çevre</li>
+                        <li><i class="fas fa-check-circle"></i> Bina Sorgu</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- REFERANS -->
+        <div class="referans" id="referans">
+            <h3>🎁 2026 BEDAVA REFERANS SİSTEMİ</h3>
+            <p>Arkadaşını davet et, ikiniz de bedava kazanın!</p>
+            <div class="kredi">+5 BEDAVA SORGU</div>
+            <p style="font-size: 1.2rem; margin-top: 1rem;">Her davet eden kullanıcıya 5 ücretsiz sorgu hediye</p>
+            <div style="margin-top: 2rem;">
+                <a href="https://t.me/FocusumSorgulamaBot" target="_blank" rel="noopener noreferrer" style="background: #7c3aed; color: white; text-decoration: none; padding: 1rem 3rem; border-radius: 60px; font-size: 1.3rem; font-weight: 700; display: inline-block; transition: all 0.3s;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
+                    <i class="fab fa-telegram"></i> HEMEN DAVET ET
+                </a>
+            </div>
+        </div>
+
+        <!-- SSS -->
+        <div class="sss">
+            <h3>❓ BEDAVA PANEL SSS</h3>
+            <div class="sss-grid">
+                <div class="sss-item">
+                    <h4>📌 TC sorgu gerçekten bedava mı?</h4>
+                    <p>Evet! panel.2026tr.xyz'de tüm sorgular tamamen ücretsiz, bedava, beleş!</p>
+                </div>
+                
+                <div class="sss-item">
+                    <h4>📌 2026'da ücretli olacak mı?</h4>
+                    <p>Hayır, 2026 boyunca tüm sorgular bedava devam edecek!</p>
+                </div>
+                
+                <div class="sss-item">
+                    <h4>📌 Hane sorgu bedava mı?</h4>
+                    <p>Evet, hane sorgu da tamamen bedava, ücretsiz!</p>
+                </div>
+                
+                <div class="sss-item">
+                    <h4>📌 Güncel GSM sorgu beleş mi?</h4>
+                    <p>Evet, güncel GSM sorgu da beleş, hemen dene!</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- FOOTER -->
+        <footer>
+            <div>© 2026 panel.2026tr.xyz - BEDAVA PANEL</div>
+            <div class="footer-links">
+                <a href="#">GİZLİLİK</a>
+                <a href="#">KULLANIM ŞARTLARI</a>
+                <a href="#">İLETİŞİM</a>
+            </div>
+            <div class="signature">
+                <i class="fas fa-crown"></i> seyfetin babanin armani
+            </div>
+        </footer>
+    </div>
+
+    <!-- GÜVENLİ JS -->
+    <script>
+        (function() {
+            'use strict';
+            const csrfToken = document.getElementById('csrf-token')?.value || '';
+            
+            // Dış linkler güvenli
+            document.querySelectorAll('a[target="_blank"]').forEach(link => {
+                link.setAttribute('rel', 'noopener noreferrer');
+            });
+            
+            console.log('%c🔒 panel.2026tr.xyz - 2026 Bedava Panel', 'color: #a78bfa; font-size: 16px;');
+            console.log('%c📱 Bot: @FocusumSorgulamaBot', 'color: #27a7e7; font-size: 14px;');
+        })();
+    </script>
+</body>
+</html>
